@@ -1,2 +1,2 @@
 ## Exercícios de Java Básico
-Repositório para amazenar exercícios em Java 
+Repositório para amazenar meus exercícios em Java
