@@ -1,6 +1,6 @@
+package exercícios;
 
-
-public class Temperatura {
+public class Temperatura0 {
     public static void main(String[] args) {
     //Declarando variáveis
         double C, K, F, Re, Ra;
@@ -11,7 +11,8 @@ public class Temperatura {
         K = C + 273.15;
         Re = C * 0.8;
         Ra = C * 1.8 + 32 + 459.67;
-    //Imprimnindo na tela 
+
+    //Imprimnindo na tela o resultado
         System.out.println("Temperatura em Faireheint: " + F);
         System.out.println("Temperatura em K: " + K);
         System.out.println("Temperatura em RE: " + Re);
