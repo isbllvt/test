@@ -1,9 +1,12 @@
-import animais.Cat;
-import animais.Dog;
+import java.util.Scanner;
+
+//import animal.Cat;
+import animal.Dog;
 
 public class Main {
     public static void main (String[] args){
-
+        
+     Scanner entrada = new Scanner(System.in);
         Dog cachorro1 = new Dog();
 
             cachorro1.nome = "sheik";
@@ -12,15 +15,20 @@ public class Main {
             cachorro1.raça = "chowchow";
             cachorro1.cor = "sujo";
 
-            System.out.println(cachorro1);
+            cachorro1.latir();
+            cachorro1.pegar();
 
-        Cat gato1 = new Cat();
+            System.out.println("escolha: carinho ou vai dormir");
+            //cachorro1.estadoEspirito = entrada.nextLine();
+            System.out.println("O doguinho está " + cachorro1.interagir(entrada.nextLine()));
 
-        gato1.nome = "fedido";
-        gato1.cor = "encardido";
-        gato1.altura = 1.2;
-        gato1.peso = 5.0;
+        //Cat gato1 = new Cat();
 
-        System.out.println(gato1);
+        // gato1.nome = "fedido";
+        // gato1.cor = "encardido";
+        // gato1.altura = 1.2;
+        // gato1.peso = 5.0;
+        
+        entrada.close();
     }
 }

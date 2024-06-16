@@ -1,4 +1,4 @@
-package animais;
+package animal;
 
 public class Cat {
 
