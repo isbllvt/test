@@ -1,7 +1,7 @@
 package animal;
 
 public class Dog {
-
+//atributos
     private String nome;
     private String raça;
     private String cor;
@@ -9,6 +9,19 @@ public class Dog {
     private Double peso; 
     private String estadoEspirito;  
     
+    //contrutores
+    public Dog(){}
+    public Dog(String nome, String raça, String cor, Double altura, Double peso, String estadoEspirito) {
+        this.nome = nome;
+        this.raça = raça;
+        this.cor = cor;
+        this.altura = altura;
+        this.peso = peso;
+        this.estadoEspirito = estadoEspirito;
+    }
+
+    //métodos
+
     public String getNome() {
         return nome;
     }

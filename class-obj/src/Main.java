@@ -7,13 +7,17 @@ public class Main {
     public static void main (String[] args){
         
      Scanner entrada = new Scanner(System.in);
-        Dog cachorro1 = new Dog();
 
-            cachorro1.setNome("sheik");
-            cachorro1.setPeso(8.5);
-            cachorro1.setAltura(23.0);
-            cachorro1.setRaça("chowchow");
-            cachorro1.setCor("sujo");
+        Dog cachorro1 = new Dog();
+        Dog cachorro2 = new Dog("Sheik", "chowchow", "sujo", 24.0, 8.5, "de boa");
+
+            System.out.println(cachorro2.getNome());
+            System.out.println(cachorro2.getCor());
+            // cachorro1.setNome("sheik");
+            // cachorro1.setPeso(8.5);
+            // cachorro1.setAltura(23.0);
+            // cachorro1.setRaça("chowchow");
+            // cachorro1.setCor("sujo");
 
             // cachorro1.latir();
             // cachorro1.pegar();
