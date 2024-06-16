@@ -2,12 +2,56 @@ package animal;
 
 public class Dog {
 
-    public String nome;
-    public String raça;
-    public String cor;
-    public Double altura;
-    public Double peso; 
-    public String estadoEspirito;  
+    private String nome;
+    private String raça;
+    private String cor;
+    private Double altura;
+    private Double peso; 
+    private String estadoEspirito;  
+    
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getRaça() {
+        return raça;
+    }
+
+    public void setRaça(String raça) {
+        this.raça = raça;
+    }
+
+    public String getCor() {
+        return cor;
+    }
+
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
+
+    public Double getAltura() {
+        return altura;
+    }
+
+    public void setAltura(Double altura) {
+        this.altura = altura;
+    }
+
+    public Double getPeso() {
+        return peso;
+    }
+
+    public void setPeso(Double peso) {
+        this.peso = peso;
+    }
+
+    public String getEstadoEspirito() {
+        return estadoEspirito;
+    }
 
     public void comer(){}
     
@@ -22,17 +66,31 @@ public class Dog {
     }
 
    public String interagir(String acao){
-    if (acao.equals("carinho")){
-        this.estadoEspirito = "feliz";
-        return estadoEspirito;
 
-    }else if(acao.equals("vai dormir")){
-        this.estadoEspirito = "triste";
+    switch (acao) {
+        case "acariciar": this.estadoEspirito = "feliz";
+        break;
+        case "dormir": this.estadoEspirito = "triste";
+        break;
+        case "bater": this.estadoEspirito = "bravo";    
+        break;
+        default: this.estadoEspirito = "de boa";
+    }
+    return this.estadoEspirito;
 
-   }else{
-    this.estadoEspirito = "de boa";
+
+
+//     if (acao.equals("carinho")){
+//         this.estadoEspirito = "feliz";
+//         return estadoEspirito;
+
+//     }else if(acao.equals("vai dormir")){
+//         this.estadoEspirito = "triste";
+
+//    }else{
+//     this.estadoEspirito = "de boa";
     
-   }
-   return estadoEspirito;
+//    }
+//    return estadoEspirito;
 }
 }

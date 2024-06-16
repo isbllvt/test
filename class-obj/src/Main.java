@@ -9,16 +9,16 @@ public class Main {
      Scanner entrada = new Scanner(System.in);
         Dog cachorro1 = new Dog();
 
-            cachorro1.nome = "sheik";
-            cachorro1.peso = 8.2;
-            cachorro1.altura = 10.3;
-            cachorro1.raça = "chowchow";
-            cachorro1.cor = "sujo";
+            cachorro1.setNome("sheik");
+            cachorro1.setPeso(8.5);
+            cachorro1.setAltura(23.0);
+            cachorro1.setRaça("chowchow");
+            cachorro1.setCor("sujo");
 
-            cachorro1.latir();
-            cachorro1.pegar();
+            // cachorro1.latir();
+            // cachorro1.pegar();
 
-            System.out.println("escolha: carinho ou vai dormir");
+            System.out.println("escolha: acariciar, dormir ou bater");
             //cachorro1.estadoEspirito = entrada.nextLine();
             System.out.println("O doguinho está " + cachorro1.interagir(entrada.nextLine()));
 
