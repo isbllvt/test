@@ -2,6 +2,7 @@ package animal;
 
 public class Dog {
 //atributos
+    static int numeroDeDogs;
     private String nome;
     private String raça;
     private String cor;
@@ -18,9 +19,17 @@ public class Dog {
         this.altura = altura;
         this.peso = peso;
         this.estadoEspirito = estadoEspirito;
+
+        numeroDeDogs ++;
     }
 
     //métodos
+    public static int getNumeroDeDogs() {
+        return numeroDeDogs;
+    }
+    public static void setNumeroDeDogs(int novoNumeroDeDogs) {
+        Dog.numeroDeDogs = novoNumeroDeDogs;
+    }
 
     public String getNome() {
         return nome;
